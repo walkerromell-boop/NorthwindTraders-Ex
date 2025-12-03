@@ -116,20 +116,20 @@ public class Customer {
         this.fax = fax;
     }
 
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "customerID='" + customerID + '\'' +
-                ", companyName='" + companyName + '\'' +
-                ", contactName='" + contactName + '\'' +
-                ", contactTitle='" + contactTitle + '\'' +
-                ", address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", region='" + region + '\'' +
-                ", postalCode='" + postalCode + '\'' +
-                ", country='" + country + '\'' +
-                ", phone='" + phone + '\'' +
-                ", fax='" + fax + '\'' +
-                '}';
-    }
-}
+   @Override
+       public String toString() {
+           return "Customer " +
+                   " customerId = " + customerID + '\n' +
+                   " companyName = " + companyName + '\n' +
+                   " contactName = " + contactName + '\n' +
+                   " contactTitle = " + contactTitle + '\n' +
+                   " address = " + address + '\n' +
+                   " city = " + city + '\n' +
+                   " region = " + region + '\n' +
+                   " postalCode = " + postalCode + '\n' +
+                   " country = " + country + '\n' +
+                   " phone = " + phone + '\n' +
+                   " fax = " + fax + '\n' + '\n';
+       }
+   }
+
