@@ -1,7 +1,9 @@
 package com.northwind;
 
 import com.northwind.Data.CustomerDao;
+import com.northwind.Data.ProductDao;
 import com.northwind.Model.Customer;
+import com.northwind.Model.Product;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 import java.util.List;
@@ -21,5 +23,9 @@ public class Application {
         CustomerDao customerDao = new CustomerDao(dataSource);
         List<Customer> customers =  customerDao.getAll();
         System.out.println(customers);
+
+        ProductDao productDao = new ProductDao(dataSource);
+        List<Product> products = productDao.getAll();
+        System.out.println(products);
     }
 }
