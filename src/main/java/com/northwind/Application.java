@@ -1,6 +1,10 @@
 package com.northwind;
 
+import com.northwind.Data.CustomerDao;
+import com.northwind.Model.Customer;
 import org.apache.commons.dbcp2.BasicDataSource;
+
+import java.util.List;
 
 
 public class Application {
@@ -14,5 +18,8 @@ public class Application {
         dataSource.setUsername(username);
         dataSource.setPassword(password);
 
+        CustomerDao customerDao = new CustomerDao(dataSource);
+        List<Customer> customers =  customerDao.getAll();
+        System.out.println(customers);
     }
 }
