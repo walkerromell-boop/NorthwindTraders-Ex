@@ -22,7 +22,10 @@ public class Application {
 
         CustomerDao customerDao = new CustomerDao(dataSource);
         List<Customer> customers =  customerDao.getAll();
-        System.out.println(customers);
+        System.out.println("Total: "+customers.size());
+        if (!customers.isEmpty()) {
+            System.out.println("First customer: " + customers.get(0));
+        }
 
         ProductDao productDao = new ProductDao(dataSource);
         List<Product> products = productDao.getAll();
