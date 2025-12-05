@@ -1,123 +1,123 @@
 package com.northwind.Model;
 
 public class Product {
-    private int ProductID;
-    private String ProductName;
-    private int SupplierID;
-    private int CategoryID;
-    private String QuantityPerUnit;
-    private double UnitPrice;
-    private int UnitsInStock;
-    private int UnitsOnOrder;
-    private int ReorderLevel;
-    private int Discontinued;
+    private int productID;
+    private String productName;
+    private int supplierID;
+    private int categoryID;
+    private String quantityPerUnit;
+    private double unitPrice;
+    private int unitsInStock;
+    private int unitsOnOrder;
+    private int reorderLevel;
+    private int discontinued;
 
     public Product(int productID, String productName, int supplierID, int categoryID, String quantityPerUnit, double unitPrice,
                    int unitsInStock, int unitsOnOrder, int reorderLevel, int discontinued) {
-        ProductID = productID;
-        ProductName = productName;
-        SupplierID = supplierID;
-        CategoryID = categoryID;
-        QuantityPerUnit = quantityPerUnit;
-        UnitPrice = unitPrice;
-        UnitsInStock = unitsInStock;
-        UnitsOnOrder = unitsOnOrder;
-        ReorderLevel = reorderLevel;
-        Discontinued = discontinued;
+        this.productID = productID;
+        this.productName = productName;
+        this.supplierID = supplierID;
+        this.categoryID = categoryID;
+        this.quantityPerUnit = quantityPerUnit;
+        this.unitPrice = unitPrice;
+        this.unitsInStock = unitsInStock;
+        this.unitsOnOrder = unitsOnOrder;
+        this.reorderLevel = reorderLevel;
+        this.discontinued = discontinued;
     }
 
     public int getProductID() {
-        return ProductID;
+        return productID;
     }
 
     public void setProductID(int productID) {
-        ProductID = productID;
+        this.productID = productID;
     }
 
     public String getProductName() {
-        return ProductName;
+        return productName;
     }
 
     public void setProductName(String productName) {
-        ProductName = productName;
+        this.productName = productName;
     }
 
     public int getSupplierID() {
-        return SupplierID;
+        return supplierID;
     }
 
     public void setSupplierID(int supplierID) {
-        SupplierID = supplierID;
+        this.supplierID = supplierID;
     }
 
     public int getCategoryID() {
-        return CategoryID;
+        return categoryID;
     }
 
     public void setCategoryID(int categoryID) {
-        CategoryID = categoryID;
+        this.categoryID = categoryID;
     }
 
     public String getQuantityPerUnit() {
-        return QuantityPerUnit;
+        return quantityPerUnit;
     }
 
     public void setQuantityPerUnit(String quantityPerUnit) {
-        QuantityPerUnit = quantityPerUnit;
+        this.quantityPerUnit = quantityPerUnit;
     }
 
     public double getUnitPrice() {
-        return UnitPrice;
+        return unitPrice;
     }
 
     public void setUnitPrice(double unitPrice) {
-        UnitPrice = unitPrice;
+        this.unitPrice = unitPrice;
     }
 
     public int getUnitsInStock() {
-        return UnitsInStock;
+        return unitsInStock;
     }
 
     public void setUnitsInStock(int unitsInStock) {
-        UnitsInStock = unitsInStock;
+        this.unitsInStock = unitsInStock;
     }
 
     public int getUnitsOnOrder() {
-        return UnitsOnOrder;
+        return unitsOnOrder;
     }
 
     public void setUnitsOnOrder(int unitsOnOrder) {
-        UnitsOnOrder = unitsOnOrder;
+        this.unitsOnOrder = unitsOnOrder;
     }
 
     public int getReorderLevel() {
-        return ReorderLevel;
+        return reorderLevel;
     }
 
     public void setReorderLevel(int reorderLevel) {
-        ReorderLevel = reorderLevel;
+        this.reorderLevel = reorderLevel;
     }
 
     public int getDiscontinued() {
-        return Discontinued;
+        return discontinued;
     }
 
     public void setDiscontinued(int discontinued) {
-        Discontinued = discontinued;
+        this.discontinued = discontinued;
     }
     @Override
     public String toString() {
         return "Products " +
-                " Product Id = " + ProductID + '\n' +
-                " Product Name = " + ProductName + '\n' +
-                " Supplier Id = " + SupplierID + '\n' +
-                " Category Id = " + CategoryID + '\n' +
-                " Quantity per unit = " + QuantityPerUnit + '\n' +
-                " Unit price = " + UnitPrice + '\n' +
-                " Units in stock = " + UnitsInStock + '\n' +
-                " Units on Order = " + UnitsOnOrder + '\n' +
-                " ReorderLevel = " + ReorderLevel + '\n' +
-                " Discontinued = " + Discontinued + '\n';
+                " Product Id = " + productID + '\n' +
+                " Product Name = " + productName + '\n' +
+                " Supplier Id = " + supplierID + '\n' +
+                " Category Id = " + categoryID + '\n' +
+                " Quantity per unit = " + quantityPerUnit + '\n' +
+                " Unit price = " + unitPrice + '\n' +
+                " Units in stock = " + unitsInStock + '\n' +
+                " Units on Order = " + unitsOnOrder + '\n' +
+                " ReorderLevel = " + reorderLevel + '\n' +
+                " Discontinued = " + discontinued + '\n';
 
     }
 }
